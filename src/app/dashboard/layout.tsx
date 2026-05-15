@@ -92,12 +92,32 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       {/* Main Content */}
       <main className="flex-1 flex flex-col min-w-0">
         <header className="h-16 border-b border-border bg-white flex items-center px-6 md:hidden">
+           <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center shrink-0 mr-3">
+             <span className="text-white font-bold text-sm">HR</span>
+           </div>
            <h1 className="font-semibold">{companyName} Portal</h1>
         </header>
-        <div className="flex-1 p-6 md:p-8 overflow-auto">
+        <div className="flex-1 p-4 sm:p-6 md:p-8 pb-24 md:pb-8 overflow-auto">
           {children}
         </div>
       </main>
+
+      {/* Mobile Bottom Navigation */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-border flex items-center justify-around p-2 z-50">
+        {navItems.map((item) => {
+          const isActive = pathname === item.href;
+          return (
+            <Link key={item.href} href={item.href} className={`flex flex-col items-center justify-center p-2 rounded-lg text-xs font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}>
+              <item.icon className={`w-5 h-5 mb-1 ${isActive ? 'text-primary' : 'text-muted-foreground'}`} />
+              {item.name}
+            </Link>
+          );
+        })}
+        <button onClick={handleLogout} className="flex flex-col items-center justify-center p-2 rounded-lg text-xs font-medium text-muted-foreground transition-colors">
+          <LogOut className="w-5 h-5 mb-1" />
+          Sign out
+        </button>
+      </nav>
     </div>
   );
 }
