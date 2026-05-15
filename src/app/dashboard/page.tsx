@@ -143,7 +143,10 @@ export default function AnalyticsDashboard() {
                     outerRadius={90}
                     paddingAngle={2}
                     dataKey="value"
-                    label={({ name, percent }) => `${name.substring(0, 15)}${name.length > 15 ? '...' : ''} (${(percent * 100).toFixed(0)}%)`}
+                    label={({ name, percent }) => {
+                      const n = String(name || '');
+                      return `${n.substring(0, 15)}${n.length > 15 ? '...' : ''} (${(percent * 100).toFixed(0)}%)`;
+                    }}
                     labelLine={true}
                   >
                     {deptChartData.map((entry, index) => (
