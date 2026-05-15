@@ -145,7 +145,8 @@ export default function AnalyticsDashboard() {
                     dataKey="value"
                     label={({ name, percent }) => {
                       const n = String(name || '');
-                      return `${n.substring(0, 15)}${n.length > 15 ? '...' : ''} (${(percent * 100).toFixed(0)}%)`;
+                      const p = percent || 0;
+                      return `${n.substring(0, 15)}${n.length > 15 ? '...' : ''} (${(p * 100).toFixed(0)}%)`;
                     }}
                     labelLine={true}
                   >
