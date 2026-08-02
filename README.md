@@ -2,6 +2,8 @@
 
 **The official Corporate HR Portal by BUP Career Club** for seamless talent discovery, candidate analytics, and CV bank management during career fests.
 
+## Impact
+Total resumes collected during Career and Education Fest 2026: **165 in 5 days.**
 ---
 
 ## What It Is
@@ -19,8 +21,6 @@ TalentHub is a web-based HR portal that gives **corporate partners and recruiter
 | **CSV Export** | One-click export of filtered candidate data for offline use |
 | **Responsive Design** | Full mobile support with bottom navigation and adaptive layouts |
 
-## Imact
-Total resumes collected during Career and Education Fest 2026: **165 in 5 days.**
 
 ## Tech Stack
 
