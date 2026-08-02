@@ -19,6 +19,9 @@ TalentHub is a web-based HR portal that gives **corporate partners and recruiter
 | **CSV Export** | One-click export of filtered candidate data for offline use |
 | **Responsive Design** | Full mobile support with bottom navigation and adaptive layouts |
 
+## Imact
+Total resumes collected during Career and Education Fest 2026: **165 in 5 days.**
+
 ## Tech Stack
 
 | Layer | Technology |
