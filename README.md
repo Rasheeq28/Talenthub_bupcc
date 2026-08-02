@@ -2,9 +2,8 @@
 
 **The official Corporate HR Portal by BUP Career Club** for seamless talent discovery, candidate analytics, and CV bank management during career fests.
 
-#Impact
-**Total resumes collected during Career and Education Fest 2026:** 165 in 5 days.
----
+## Impact
+Total resumes collected during Career and Education Fest 2026: **165 in 5 days.**
 
 ## What It Is
 
