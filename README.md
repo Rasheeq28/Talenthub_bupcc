@@ -31,58 +31,5 @@ TalentHub is a web-based HR portal that gives **corporate partners and recruiter
 | **Database** | Supabase (PostgreSQL) |
 | **Auth** | Custom company-level authentication via Supabase |
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- A Supabase project with the `CvBank` and `HrProfiles` tables (see `supabase/schema.sql`)
-
-### Setup
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/Rasheeq28/Talenthub_bupcc.git
-cd Talenthub_bupcc
-
-# 2. Install dependencies
-npm install
-
-# 3. Configure environment variables
-#    Create a .env.local file with your Supabase credentials:
-#    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-#    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
-
-# 4. Run the development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) — you'll be redirected to the login page.
-
-### Database Setup
-
-Run the SQL in `supabase/schema.sql` against your Supabase project to create the `HrProfiles` table with seed data and configure Row Level Security for the `CvBank` table.
-
-## Project Structure
-
-```
-src/
-├── app/
-│   ├── login/page.tsx          # Corporate login
-│   ├── dashboard/
-│   │   ├── layout.tsx          # Sidebar + mobile nav shell
-│   │   ├── page.tsx            # Analytics overview (charts & KPIs)
-│   │   └── candidates/page.tsx # Talent discovery table
-│   ├── layout.tsx              # Root layout
-│   └── page.tsx                # Redirect → /login
-├── components/ui/              # shadcn/ui components
-├── lib/
-│   ├── supabase.ts             # Supabase client
-│   └── utils.ts                # Utilities
-└── supabase/
-    └── schema.sql              # Database schema & seed data
-```
-
-## License
 
 Built with ❤️ by the **BUP Career Club** tech team.
